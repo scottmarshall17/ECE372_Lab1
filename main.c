@@ -26,6 +26,7 @@ int main(void)
     {
         //TODO: Using a finite-state machine, define the behavior of the LEDs
         //Debounce the switch
+        //This line is a test
     }
     
     return 0;
