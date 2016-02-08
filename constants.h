@@ -14,6 +14,10 @@
 #define DISABLED 0
 #define HI_Z 0
 #define LOW_Z 1
+#define PS_256 3
+#define FLAG_DOWN 0
+#define FLAG_UP 1
+
 
 #ifdef	__cplusplus
 extern "C" {

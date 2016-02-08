@@ -6,6 +6,7 @@
 */
 
 #include <xc.h>
+#include "leds.h"
 #include "constants.h"
 
 void initLEDs(){
@@ -18,5 +19,15 @@ void initLEDs(){
     
     LATGbits.LATG12 = HI_Z;         //Turn off the Red LED
     LATGbits.LATG14 = LOW_Z;        //Turn on the Green LED
-    
+}
+
+void turnOnLED(int led) {
+    if(led == 0) {  //turns on the Greed LED
+        LATGbits.LATG12 = HI_Z;
+        LATGbits.LATG14 = LOW_Z;
+    }
+    else if(led == 1) {     //turns on the Red LED
+        LATGbits.LATG12 = LOW_Z;
+        LATGbits.LATG14 = HI_Z;
+    }
 }
